@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ashish's Portfolio</title>
+  <link rel="stylesheet" href="output.css" />
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="script.js"></script>
+  
+</head>
+<body class="h-screen bg-slate-50 font-poppins text-slate-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-10">
+    <div class="container mx-auto px-4 md:px-8 h-[60px] flex justify-between items-center">
+      <div class="text-3xl md:text-5xl font-extrabold text-sky-900">
+        <a href="index.html">Ashish</a>
+      </div>
+      <div class="hidden md:flex gap-8 text-xl font-bold">
+        <a href="#" class="hover:text-sky-600">Home</a>
+        <a href="#about" class="hover:text-sky-600">About</a>
+        <a href="#skill" class="hover:text-sky-600">Skills</a>
+        <a href="#experinces" class="hover:text-sky-600">Experiences</a>
+        <a href="#project" class="hover:text-sky-600">Projects</a>
+        <a href="#contact" class="hover:text-sky-600">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+<!-- Hero Section -->
+  <section id="Home" class="pt-[60px]">
+    <div class="flex flex-col md:flex-row items-center justify-center h-[calc(100vh-60px)] px-4 md:px-16">
+      <!-- Text -->
+      <div class="text-center md:text-left space-y-4 max-w-2xl animate-slide mr-3" >
+        <h3 class="text-xl md:text-3xl">Hi, There</h3>
+        <h1 class="text-2xl md:text-5xl font-extrabold">
+          I'm <span class="text-sky-400">Ashish Kumar Mishra</span>
+        </h1>
+        <h2 class="text-xl md:text-3xl">A Web & Mobile App Developer</h2>
+        <button class="border-2 rounded-l p-2 px-5 border-sky-900 hover:bg-sky-900 hover:text-white text-lg"><a href="Ashish Kumar Mishra.pdf" target="_blank">My Resume</a></button>
+      </div>
+
+      <!-- Profile Image -->
+      <div class="mb-8 md:mb-0 md:ml-10 hidden md:block animate-wiggle">
+        <img src="images/profile.png" alt="Profile" class="h-[70vh] w-auto max-w-xs md:max-w-md" />
+      </div>
+    </div>
+  </section>
+  <!-- About -->
+  <section id="about" class=" my-10 mb-10">
+    <div class="flex flex-col justify-center items-center text-center px-4 mb-10 h-[calc(100vh-60px)]">
+      <h1 class="text-2xl md:text-4xl font-bold">About Me</h1>
+      <hr class="w-24 h-[3px] my-4 bg-gray-400 border-0 dark:bg-gray-600" />
+      <p class="max-w-7xl text-slate-600 font-poppins text-lg md:text-xl">
+        I'm Ashish Kumar Mishra, a software engineer with over 2 years of experience building scalable web applications in the banking and e-commerce domains. Skilled in Java, Spring Boot, Angular, and IBM BPM, I develop robust back-end systems and intuitive user interfaces. At Cognizant, I’ve contributed to high-impact projects focused on performance, security, and user experience. I hold a B.Tech in IT from HMRITM, Delhi, and have solved over 300 coding problems on platforms like LeetCode. I'm passionate about clean code, problem-solving, and continuous learning to build efficient and impactful software solutions.
+      </p>
+    </div>
+  </section>
+  <!-- Skill -->
+   <section id="skill" >
+    <div class="flex flex-col justify-center items-center text-center bg-gradient-to-r from-teal-300 to-blue-500 h-[calc(100vh-60px)] m-3 rounded-2xl pb-3">
+        <h1 class="text-2xl md:text-4xl font-bold text-white ">Skills</h1>
+         <hr class="w-20 h-[3px] my-4 mb-10 bg-white border-0" />
+         <!-- Desktop Version -->
+<!-- Desktop Version -->
+<div class="hidden md:block">
+  <div class="grid auto-cols-max grid-flow-col grid-rows-2 gap-8 p-4">
+    <!-- Python -->
+    <div class="w-35 h-35 bg-white shadow-2xl shadow-white rounded-2xl p-4" onclick="anima(this,'Python','75','1','images/python.png')" id="d1">
+      <img src="images/python.png" class="w-full h-full object-contain" alt="Python">
+    </div>
+    
+    <!-- C++ -->
+    <div class="w-35 h-35 bg-white shadow-2xl shadow-white rounded-2xl p-4" onclick="anima(this,'C++','80','2','images/c-.png')">
+      <img src="images/c-.png" class="w-full h-full object-contain" alt="C++">
+    </div>
+    
+    <!-- C -->
+    <div class="w-35 h-35 bg-white shadow-2xl shadow-white rounded-2xl p-4" onclick="anima(this,'C','70','3','images/letter-c.png')">
+      <img src="images/letter-c.png" class="w-full h-full object-contain" alt="C">
+    </div>
+    
+    <!-- Java -->
+    <div class="w-35 h-35 bg-white shadow-2xl shadow-white rounded-2xl p-4" onclick="anima(this,'Java','85','4','images/java.png')">
+      <img src="images/java.png" class="w-full h-full object-contain" alt="Java">
+    </div>
+    
+    <!-- CSS -->
+    <div class="w-35 h-35 bg-white shadow-2xl shadow-white rounded-2xl p-4" onclick="anima(this,'CSS','90','5','images/css-3.png')">
+      <img src="images/css-3.png" class="w-full h-full object-contain" alt="CSS">
+    </div>
+    
+    <!-- HTML -->
+    <div class="w-35 h-35 bg-white shadow-2xl shadow-white rounded-2xl p-4" onclick="anima(this,'HTML','95','6','images/html-5.png')">
+      <img src="images/html-5.png" class="w-full h-full object-contain" alt="HTML">
+    </div>
+    
+    <!-- JavaScript -->
+    <div class="w-35 h-35 bg-white shadow-2xl shadow-white rounded-2xl p-4" onclick="anima(this,'JavaScript','85','7','images/java-script.png')">
+      <img src="images/java-script.png" class="w-full h-full object-contain" alt="JavaScript">
+    </div>
+    
+    <!-- MySQL -->
+    <div class="w-35 h-35 bg-white shadow-2xl shadow-white rounded-2xl p-4" onclick="anima(this,'MySQL','80','8','images/mysql.png')">
+      <img src="images/mysql.png" class="w-full h-full object-contain" alt="MySQL">
+    </div>
+    
+    <!-- Angular -->
+    <div class="w-35 h-35 bg-white shadow-2xl shadow-white rounded-2xl p-4" onclick="anima(this,'Angular','75','9','images/angular.png')">
+      <img src="images/angular.png" class="w-full h-full object-contain" alt="Angular">
+    </div>
+    
+    <!-- Android -->
+    <div class="w-35 h-35 bg-white shadow-2xl shadow-white rounded-2xl p-4" onclick="anima(this,'Android','70','10','images/android.png')">
+      <img src="images/android.png" class="w-full h-full object-contain" alt="Android">
+    </div>
+    
+    <!-- Spring -->
+    <div class="w-35 h-35 bg-white shadow-2xl shadow-white rounded-2xl p-4" onclick="anima(this,'Spring','80','11','images/leaf.png')">
+      <img src="images/leaf.png" class="w-full h-full object-contain" alt="Spring">
+    </div>
+    
+    <!-- Bootstrap -->
+    <div class="w-35 h-35 bg-white shadow-2xl shadow-white rounded-2xl p-4" onclick="anima(this,'Bootstrap','85','12','images/bootstrap.png')">
+      <img src="images/bootstrap.png" class="w-full h-full object-contain" alt="Bootstrap">
+    </div>
+    
+    <!-- IBM -->
+    <div class="w-35 h-35 bg-white shadow-2xl shadow-white rounded-2xl p-4" onclick="anima(this,'IBM','75','13','images/ibm.png')">
+      <img src="images/ibm.png" class="w-full h-full object-contain" alt="IBM">
+    </div>
+    
+    <!-- Problem Solving -->
+    <div class="w-35 h-35 bg-white shadow-2xl shadow-white rounded-2xl p-4" onclick="anima(this,'Problem Solving','90','14','images/problem-solving.png')">
+      <img src="images/problem-solving.png" class="w-full h-full object-contain" alt="Problem Solving">
+    </div>
+  </div>
+</div>
+
+
+<!-- Mobile Version -->
+<!-- Mobile Version -->
+<div class="md:hidden w-full h-[700px] overflow-y-auto">
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 p-4 w-full">
+    <!-- Python -->
+    <div class="bg-white shadow-2xl shadow-white rounded-2xl p-4 flex justify-center items-center w-full aspect-square" onclick="setTimeout(anima(this,'Android','71','10','images/android.png'),3000)">
+      <img src="images/python.png" onclick="flip(this)" class="w-full object-contain" alt="Python">
+    </div>
+
+    <!-- C++ -->
+    <div class="bg-white shadow-2xl shadow-white rounded-2xl p-4 flex justify-center items-center w-full aspect-square" onclick="anima(this,'C++','81','2','images/c-.png')">
+      <img src="images/c-.png" onclick="flip(this)" class="w-full object-contain" alt="C++">
+    </div>
+
+    <!-- C -->
+    <div class="bg-white shadow-2xl shadow-white rounded-2xl p-4 flex justify-center items-center w-full aspect-square" onclick="anima(this,'C','71','3','images/letter-c.png')">
+      <img src="images/letter-c.png" onclick="flip(this)" class="w-full object-contain" alt="C">
+    </div>
+
+    <!-- Java -->
+    <div class="bg-white shadow-2xl shadow-white rounded-2xl p-4 flex justify-center items-center w-full aspect-square" onclick="anima(this,'Java','86','4','images/java.png')">
+      <img src="images/java.png" onclick="flip(this)" class="w-full object-contain" alt="Java">
+    </div>
+
+    <!-- CSS -->
+    <div class="bg-white shadow-2xl shadow-white rounded-2xl p-4 flex justify-center items-center w-full aspect-square" onclick="anima(this,'CSS','91','5','images/css-3.png')">
+      <img src="images/css-3.png" onclick="flip(this)" class="w-fullobject-contain" alt="CSS">
+    </div>
+
+    <!-- HTML -->
+    <div class="bg-white shadow-2xl shadow-white rounded-2xl p-4 flex justify-center items-center w-full aspect-square" onclick="anima(this,'HTML','96','6','images/html-5.png')">
+      <img src="images/html-5.png" onclick="flip(this)" class="w-full object-contain" alt="HTML">
+    </div>
+
+    <!-- JavaScript -->
+    <div class="bg-white shadow-2xl shadow-white rounded-2xl p-4 flex justify-center items-center w-full aspect-square" onclick="anima(this,'JavaScript','86','7','images/java-script.png')">
+      <img src="images/java-script.png" onclick="flip(this)" class="w-full object-contain" alt="JavaScript">
+    </div>
+
+    <!-- MySQL -->
+    <div class="bg-white shadow-2xl shadow-white rounded-2xl p-4 flex justify-center items-center w-full aspect-square" onclick="anima(this,'MySQL','81','8','images/mysql.png')">
+      <img src="images/mysql.png" onclick="flip(this)" class="w-full object-contain" alt="MySQL">
+    </div>
+
+    <!-- Angular -->
+    <div class="bg-white shadow-2xl shadow-white rounded-2xl p-4 flex justify-center items-center w-full aspect-square" onclick="anima(this,'Angular','76','9','images/angular.png')">
+      <img src="images/angular.png" onclick="flip(this)" class="w-full object-contain" alt="Angular">
+    </div>
+
+    <!-- Android -->
+    <div class="bg-white shadow-2xl shadow-white rounded-2xl p-4 flex justify-center items-center w-full aspect-square" onclick="setTimeout(anima(this,'Android','71','10','images/android.png'),200)">
+      <img src="images/android.png" onclick="flip(this)" class="w-full object-contain" alt="Android">
+    </div>
+
+    <!-- Spring -->
+    <div class="bg-white shadow-2xl shadow-white rounded-2xl p-4 flex justify-center items-center w-full aspect-square" onclick="anima(this,'Spring','81','11','images/leaf.png')">
+      <img src="images/leaf.png" onclick="flip(this)" class="w-full object-contain" alt="Spring">
+    </div>
+
+    <!-- Bootstrap -->
+    <div class="bg-white shadow-2xl shadow-white rounded-2xl p-4 flex justify-center items-center w-full aspect-square" onclick="anima(this,'Bootstrap','86','12','images/bootstrap.png')">
+      <img src="images/bootstrap.png" onclick="flip(this)" class="w-full object-contain" alt="Bootstrap">
+    </div>
+
+    <!-- Problem Solving -->
+    <div class="bg-white shadow-2xl shadow-white rounded-2xl p-4 flex justify-center items-center w-full aspect-square" onclick="anima(this,'Problem Solving','91','13','images/problem-solving.png')">
+      <img src="images/problem-solving.png" onclick="flip(this)" class="w-full object-contain" alt="Problem Solving">
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+    </div>
+   </section> 
+<!-- Experinces -->
+ <section id="experinces">
+  <div class= "h-[calc(100vh-60px)]  items-center flex justify-center  flex-col p-10 overflow-y-scroll">
+    <h1 class="text-2xl md:text-4xl font-bold ">Experiences/Education</h1>
+     <hr class="w-24 h-[3px] my-4 bg-gray-400 border-0 dark:bg-gray-600 mb-10 mx-10" />
+   <br>
+    <div id="exbar" class="flex justify-center items-center w-full h-full">
+       
+    <div class="w-full max-w-full h-1 bg-gray-300 relative overflow-hidden ">
+    <div id="animated-line" class="h-full bg-blue-500 w-0"></div>
+    
+  </div>
+  <div class="absolute md:left-30 flex flex-row justify-between  items-center w-3/4">
+<div class="h-7 w-7 border-4 border-black rounded-full bg-white flex  justify-center items-center" onclick="opencard('1')">
+  <span class="animate-ping absolute top-1.5 left-1.5 h-4 w-4 rounded-full bg-sky-900 duration-[2000ms] transition transform delay-[1000ms] inline-flex" ></span>
+    <div class="h-20 relative border-2 border-black mt-25"></div>
+    
+    <div class="absolute top-25 w-25 "><h1 class="text-2xl font-medium">class 10</h1></div>
+</div>
+<div class="h-7 w-7 border-4 border-black rounded-full bg-white flex justify-center items-center "onclick="opencard('2')">
+  <span class="animate-ping absolute   h-4 w-4 rounded-full bg-sky-900 duration-[2000ms] transition transform delay-[2000ms] inline-flex"></span>
+    <div class="h-20 relative border-2 border-black mb-25"></div>
+    
+ <div class="absolute -top-25.5 w-25 "><h1 class="text-2xl font-medium">class 12</h1></div>
+</div>
+<div class="h-7 w-7 border-4 border-black rounded-full bg-white flex justify-center items-center " onclick="opencard('3')">
+  <span class="animate-ping absolute h-4 w-4 rounded-full bg-sky-900 duration-[2000ms] transition transform delay-[3000ms] inline-flex"></span>
+    <div class="h-20 relative border-2 border-black mt-25"></div>
+    
+ <div class="absolute top-25 w-25 "><h1 class="text-2xl font-medium">Collage</h1></div>
+</div>
+<div class="h-7 w-7 border-4 border-black rounded-full bg-white flex justify-center items-center  " onclick="opencard('4')">
+  <span class="animate-ping absolute  h-4 w-4 rounded-full bg-sky-900 duration-[2000ms] transition transform delay-[3000ms] inline-flex"></span>
+    <div class="h-20 relative border-2 border-black mb-25"></div>
+    
+     <div class="absolute -top-25.5 w-25 text-center "><h1 class="text-2xl font-medium">Internships</h1></div>
+</div>
+<div  class="h-7 w-7 border-4 border-black rounded-full bg-white flex justify-center items-center " onclick="opencard('5')">
+<span class="animate-ping absolute   h-4 w-4 rounded-full bg-sky-900 duration-[2000ms] transition transform delay-[4000ms] inline-flex"></span>
+    <div class="h-20 relative border-2 border-black mt-25" ></div>
+    
+    <div class="absolute top-25 w-25 text-center"><h1 class="text-2xl font-medium">Work</h1></div>
+    <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                    Terms of Service
+                </h3>
+                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-4 md:p-5 space-y-4">
+                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
+                </p>
+                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
+                </p>
+            </div>
+            <!-- Modal footer -->
+            <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                <button data-modal-hide="default-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I accept</button>
+                <button data-modal-hide="default-modal" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Decline</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+  </div>
+  </div>
+  <!-- Experices card class10-->
+   <!-- CLASS 10 -->
+    <div id="exinfocard1" class="hidden mt-10">
+  <div class="backdrop-opacity-50 rounded-4xl h-full w-full flex justify-center items-center">
+    <div class="bg-white w-fit z-50 rounded-3xl shadow-2xl p-4">
+      <div class="w-full mt-2 mr-5 h-10 md:h-15 flex flex-row-reverse">
+        <img src="images/close.png" onclick="closecard()">
+      </div>
+      <div class="flex items-center justify-center flex-col">
+        <h1 class="text-4xl font-semibold text-blue-800 mt-4">Secondary Education</h1>
+        <div class="flex justify-start items-center flex-wrap mt-8">
+          <img src="images/graduation.png" class="w-10" alt="">
+          <h1 class="text-2xl font-bold text-gray-800">Class 10</h1>
+        </div>
+      </div>
+
+      <div class="m-2 mt-4">
+        <div class="flex flex-wrap items-center">
+          <img class="w-10 h-10" src="images/university.png" alt="">
+          <h1 class="text-xl md:text-2xl text-gray-700">Kendriya Vidyalaya, Sector 2, R.K. Puram, New Delhi</h1>
+        </div>
+        <div class="flex flex-wrap items-center my-2">
+          <img class="w-10 h-10" src="images/calendar.png" alt="">
+          <h1 class="text-lg text-gray-600">Completed: 2016</h1>
+        </div>
+        <div class="flex flex-wrap items-center my-2">
+          <img class="w-10 h-10" src="images/best.png" alt="">
+          <h1 class="text-lg text-gray-600">CGPA: 8.0 / 10.0</h1>
+        </div>
+
+        <div class="mt-6 mx-12 text-xl">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-2">Subjects:</h2>
+          <ul class="list-disc text-gray-700 ml-6">
+            <li>English</li>
+            <li>Mathematics</li>
+            <li>Science</li>
+            <li>Social Science</li>
+            <li>Hindi</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+   <!-- CLASS12 -->
+   <div id="exinfocard2" class="hidden mt-10">
+  <div class="backdrop-opacity-50 rounded-4xl h-full w-full flex justify-center items-center">
+    <div class="bg-white w-fit z-50 rounded-3xl shadow-2xl p-4">
+      <div class="w-full mt-2 mr-5 h-10 md:h-15 flex flex-row-reverse">
+        <img src="images/close.png" onclick="closecard()">
+      </div>
+      <div class="flex items-center justify-center flex-col">
+        <h1 class="text-4xl font-semibold text-blue-800 mt-4">Senior Secondary Education</h1>
+        <div class="flex justify-start items-center flex-wrap mt-8">
+          <img src="images/graduation.png" class="w-10" alt="">
+          <h1 class="text-2xl font-bold text-gray-800">Class 12 – PCM + Computer Science</h1>
+        </div>
+      </div>
+
+      <div class="m-2 mt-4">
+        <div class="flex flex-wrap items-center">
+          <img class="w-10 h-10" src="images/university.png" alt="">
+          <h1 class="text-xl md:text-2xl text-gray-700">Kendriya Vidyalaya, Sector 2, R.K. Puram, New Delhi</h1>
+        </div>
+        <div class="flex flex-wrap items-center my-2">
+          <img class="w-10 h-10" src="images/calendar.png" alt="">
+          <h1 class="text-lg text-gray-600">Completed: 2018</h1>
+        </div>
+
+        <div class="mt-6 mx-12 text-xl">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-2">Subjects:</h2>
+          <ul class="list-disc text-gray-700 ml-6">
+            <li>Physics</li>
+            <li>Chemistry</li>
+            <li>Mathematics</li>
+            <li>Computer Science</li>
+            <li>English</li>
+          </ul>
+        </div>
+
+        <div class="mt-6 mx-12 text-xl">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-2">Highlights:</h2>
+          <ul class="list-disc text-gray-700 ml-6">
+            <li>Developed interest in programming and logical reasoning through Computer Science curriculum.</li>
+            <li>Built basic projects in C++ and HTML during practical sessions.</li>
+            <li>Scored consistently high in Science and Math-based assignments and assessments.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BTECH -->
+ <div id="exinfocard3" class="hidden mt-10">
+  <div class="backdrop-opacity-50 rounded-4xl h-full w-full flex justify-center items-center">
+    <div class="bg-white w-fit z-50 rounded-3xl shadow-2xl p-4">
+      <div class="w-full mt-2 mr-5 h-10 md:h-15 flex flex-row-reverse">
+        <img src="images/close.png" onclick="closecard()">
+      </div>
+      <div class="flex items-center justify-center flex-col">
+        <h1 class="text-4xl font-semibold text-blue-800 mt-4">College Education</h1>
+        <div class="flex justify-start items-center flex-wrap mt-8">
+          <img src="images/graduation.png" class="w-10" alt="">
+          <h1 class="text-2xl font-bold text-gray-800">B.Tech in Information Technology</h1>
+        </div>
+      </div>
+
+      <div class="m-2 mt-4">
+        <div class="flex flex-wrap items-center">
+          <img class="w-10 h-10" src="images/university.png" alt="">
+          <h1 class="text-xl md:text-2xl text-gray-700">HMR Institute of Technology and Management, GGSIPU</h1>
+        </div>
+        <div class="flex flex-wrap items-center my-2">
+          <img class="w-10 h-10" src="images/calendar.png" alt="">
+          <h1 class="text-lg text-gray-600">August 2018 – July 2022</h1>
+        </div>
+        <div class="flex flex-wrap items-center my-2">
+          <img class="w-10 h-10" src="images/best.png" alt="">
+          <h1 class="text-lg text-gray-600">GPA: 8.7 / 10.0</h1>
+        </div>
+
+        <div class="mt-6 mx-12 text-xl">
+          <h2 class="text-2xl font-semibold text-gray-800 mb-2">Key Experiences:</h2>
+          <ul class="list-disc text-gray-700 ml-6">
+            <li>Developed 3 full-stack projects including an eCommerce website and a parking system.</li>
+            <li>Participated in hackathons and coding contests on HackerRank and CodeChef.</li>
+            <li>Served as technical team member in annual tech fest, managing event logistics and registrations.</li>
+            <li>Completed mini-projects in Java, C++, and MySQL during semesters.</li>
+            <li>Built a Leave Management System using IBM BPM for final-year project.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- INTERNSHIP -->
+<div id="exinfocard4" class="hidden mt-10">
+  <div class="backdrop-opacity-50 rounded-4xl h-full w-full flex justify-center items-center">
+    <div class="bg-white w-fit z-50 rounded-3xl shadow-2xl p-4">
+      <div class="w-full mt-2 mr-5 h-10 md:h-15 flex flex-row-reverse">
+        <img src="images/close.png" onclick="closecard()">
+      </div>
+      <div class="flex items-center justify-center flex-col">
+      
+        <h1 class="text-4xl font-semibold text-blue-800 mt-4">Internship</h1>
+
+        <!-- Internship: Vac Global Education -->
+        <div class="flex flex-col items-start mt-8 w-full px-6">
+          <div class="flex items-center space-x-3 mb-2">
+            <img src="images/work.png" class="w-8" alt="">
+            <h2 class="text-2xl font-bold text-gray-800">Intern – Vac Global Education</h2>
+          </div>
+          <div class="flex items-center space-x-3 mb-2">
+            <img src="images/university.png" class="w-6 h-6" alt="">
+            <p class="text-xl text-gray-700">Patel Nagar, Delhi</p>
+          </div>
+          <div class="flex items-center space-x-3 mb-4">
+            <img src="images/calendar.png" class="w-6 h-6" alt="">
+            <p class="text-lg text-gray-600">July 2021 – October 2021</p>
+          </div>
+          <ul class="list-disc text-lg ml-8 text-gray-700">
+            <li>Developed result view module using HTML, CSS, and Bootstrap.</li>
+            <li>Enhanced UX with responsive, mobile-first design.</li>
+          </ul>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-300 my-6 w-11/12"></div>
+
+        <!-- Internship: Cognizant -->
+        <div class="flex flex-col items-start w-full px-6">
+          <div class="flex items-center space-x-3 mb-2">
+            <img src="images/work.png" class="w-8" alt="">
+            <h2 class="text-2xl font-bold text-gray-800">Intern – Cognizant</h2>
+          </div>
+          <div class="flex items-center space-x-3 mb-2">
+            <img src="images/university.png" class="w-6 h-6" alt="">
+            <p class="text-xl text-gray-700">Gurgaon, Haryana</p>
+          </div>
+          <div class="flex items-center space-x-3 mb-4">
+            <img src="images/calendar.png" class="w-6 h-6" alt="">
+            <p class="text-lg text-gray-600">April 2022 – November 2022</p>
+          </div>
+          <ul class="list-disc text-lg ml-8 text-gray-700">
+            <li>Trained in IBM BPM and developed web projects using HTML, CSS, JavaScript.</li>
+            <li>Improved middleware performance and reduced downtime.</li>
+          </ul>
+        </div>
+
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WORK -->
+<div id="exinfocard5" class="hidden mt-10">
+  <div class="backdrop-opacity-50 rounded-4xl h-full w-full flex justify-center items-center">
+    <div class="bg-white w-fit z-50 rounded-3xl shadow-2xl p-4">
+      <div class="w-full mt-2 mr-5 h-10 md:h-15 flex flex-row-reverse">
+        <img src="images/close.png" onclick="closecard()">
+      </div>
+      <div class="flex items-center justify-center flex-col">
+       
+        <h1 class="text-4xl font-semibold text-blue-800 mt-4">Work Experience</h1>
+
+        <!-- Role 1: Programmer Analyst Trainee -->
+        <div class="flex flex-col items-start mt-8 w-full px-6">
+          <div class="flex items-center space-x-3 mb-2">
+            <img src="images/work.png" class="w-8" alt="">
+            <h2 class="text-2xl font-bold text-gray-800">Programmer Analyst Trainee</h2>
+          </div>
+          <div class="flex items-center space-x-3 mb-2">
+            <img src="images/university.png" class="w-6 h-6" alt="">
+            <p class="text-xl text-gray-700">Cognizant, Gurgaon, Haryana</p>
+          </div>
+          <div class="flex items-center space-x-3 mb-4">
+            <img src="images/calendar.png" class="w-6 h-6" alt="">
+            <p class="text-lg text-gray-600">November 2022 – November 2023</p>
+          </div>
+          <ul class="list-disc  md:text-lg ml-8 text-gray-700">
+            <li>Completed training in IBM BPM and front-end technologies.</li>
+            <li>Built a complete web project using HTML, CSS, JavaScript, and IBM BPM.</li>
+            <li>Managed business processes and reduced system inefficiencies.</li>
+          </ul>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-300 my-6 w-11/12"></div>
+
+        <!-- Role 2: Programmer Analyst -->
+        <div class="flex flex-col items-start w-full px-6">
+          <div class="flex items-center space-x-3 mb-2">
+            <img src="images/work.png" class="w-8" alt="">
+            <h2 class="text-2xl font-bold text-gray-800">Programmer Analyst</h2>
+          </div>
+          <div class="flex items-center space-x-3 mb-2">
+            <img src="images/university.png" class="w-6 h-6" alt="">
+            <p class="text-xl text-gray-700">Cognizant, Gurgaon, Haryana</p>
+          </div>
+          <div class="flex items-center space-x-3 mb-4">
+            <img src="images/calendar.png" class="w-6 h-6" alt="">
+            <p class="text-lg text-gray-600">November 2023 – January 2025</p>
+          </div>
+          <ul class="list-disc text-lg ml-8 text-gray-700">
+            <li>Developed scalable banking software with Java and Spring Boot.</li>
+            <li>Created RESTful APIs and integrated with client systems.</li>
+            <li>Improved front-end interfaces using HTML, CSS, JavaScript.</li>
+            <li>Enhanced application performance, reducing load time by 20%.</li>
+            <li>Worked in agile teams to deliver secure financial solutions.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+   
+      
+    </div>
+ </section>
+
+<!-- project -->
+ <section id="project">
+  <div class="flex flex-col justify-between items-center text-center px-4 mt-20 ">
+     <h1 class="text-2xl md:text-4xl font-bold">Projects</h1>
+      <hr class="w-24 h-[3px] my-4 bg-gray-400 border-0 dark:bg-gray-600" />
+  </div>
+  <div class="flex  space-y-12 md:space-y-0 px-3 flex-col md:flex-row justify-between items-center text-center mb-10 h-[calc(100vh-60px)] md:h-[calc(80vh-60px)] gap-x-9">
+    
+
+<!-- project1 -->
+    <div class="w-3/3 h-2/3 md:w-1/3 shadow-xl hover:ring-2 ring-sky-700 shadow-sky-700 md:h-2/3 rounded-4xl opacity-80 bg-cover bg-no-repeat bg-center bg-[url('images/parkandgo.png')] relative text-white" onclick="viewp1(this)">
+  
+</div>
+<!-- project2 -->
+<div class="w-3/3 h-2/3 md:w-1/3 shadow-xl hover:ring-2 ring-sky-700 shadow-sky-700 md:h-2/3 rounded-4xl opacity-80 bg-cover bg-no-repeat bg-center bg-[url('images/yourmart.png')] relative text-white" onclick="viewp2(this)">
+  
+</div>
+<!-- project3 -->
+ <div class="w-3/3 h-2/3 md:w-1/3 shadow-xl hover:ring-2 ring-sky-700 shadow-sky-700 md:h-2/3 rounded-4xl opacity-80 bg-cover bg-no-repeat bg-center bg-[url('images/leave_application.png')] relative text-white" onclick="viewp3(this)">
+  
+</div>  
+  </div>
+
+ </section>
+<!-- contact me -->
+ <section id="contact">
+<div class="h-[calc(120vh-60px)] ">
+  <div class="flex-col flex justify-center items-center">
+    <div class="text-center flex-col flex justify-center items-center">
+      <h1 class="text-2xl md:text-4xl font-bold">Contact </h1>
+      <hr class="w-24 h-[3px] mt-4 bg-gray-400 border-0 dark:bg-gray-600" />
+    </div>
+    <div class="flex flex-col-reverse  md:flex-row justify-around items-center w-full mt-10">
+      <!-- social media -->
+      <div class="flex flex-col justify-center items-center mt-10 md:mt-1 md:w-1/2"> 
+        <h1 class="text-2xl md:text-4xl font-bold text-sky-900">Socal Media Platform</h1>
+        <div class="flex mt-8 space-x-10">
+          <a href="https://www.linkedin.com/in/ashish-kumar-mishra-5a3685170/"><img src="images/linkedin.png"class="w-13 h-13 hover:scale-125 ttransition duration-500 ease-in-out" alt="linkdin"></a>
+           <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ashishk200088@gmail.com"><img src="images/gmail.png"class="w-13 h-13 hover:scale-125 ttransition duration-500 ease-in-out" alt=""></a>
+            <a href="https://t.me/Ashishk200088"><img src="images/telegram.png"class="w-13 h-13 hover:scale-125 ttransition duration-500 ease-in-out" alt=""></a>
+             <a href="#"><img src="images/twitter.png"class="w-13 h-13 hover:scale-125 ttransition duration-500 ease-in-out" alt=""></a>
+        </div>
+      </div>
+      <!-- form -->
+      <div class="flex flex-row justify-center items-center p-2 m-2 mb-3 md:w-1/2 ">
+        <div class="border-2 w-full  md:w-2/3 border-sky-500 rounded-2xl shadow-2xl shadow-sky-800">
+         
+        <div class="w-full max-w-lg bg-white rounded-2xl shadow-xl p-8 space-y-6">
+    <h2 class="text-2xl font-bold text-sky-900 text-center">Contact Me</h2>
+
+    <div>
+      <label class="block text-sky-600 mb-1 font-semibold">Name</label>
+      <input type="text" placeholder="Your name" class="w-full border border-sky-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400" required>
+    </div>
+
+    <div>
+      <label class="block text-sky-600 mb-1 font-semibold">Email</label>
+      <input id="email" type="email" placeholder="Your email" class="w-full border border-sky-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400" required>
+    </div>
+
+    <div>
+      <label class="block text-sky-600 mb-1 font-semibold">Subject</label>
+      <input type="text" placeholder="Subject" class="w-full border border-sky-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400">
+    </div>
+
+    <div>
+      <label class="block text-sky-600 mb-1 font-semibold">Message</label>
+      <textarea placeholder="Write your message..." rows="4" class="w-full border border-sky-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400" required></textarea>
+    </div>
+
+    <button  class="w-full bg-sky-500 text-white font-semibold py-2 rounded-lg hover:bg-sky-600 transition duration-300" onclick="sendmsg()">
+      Send Message
+    </button>
+  </div>
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+ </section>
+<!-- footer -->
+ <footer class="bg-gray-900 text-gray-300 py-10 ">
+  <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- About -->
+    <div>
+      <h2 class="text-xl font-semibold mb-4">About Me</h2>
+      <p class="text-sm">
+        I'm a passionate developer focused on building responsive web apps and creative digital experiences.
+      </p>
+    </div>
+
+    <!-- Links -->
+    <div>
+      <h2 class="text-xl font-semibold mb-4">Quick Links</h2>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#about" class="hover:text-white">About</a></li>
+        <li><a href="#projects" class="hover:text-white">Projects</a></li>
+        <li><a href="#contact" class="hover:text-white">Contact</a></li>
+        <li><a href="resume.pdf" class="hover:text-white" target="_blank">Resume</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h2 class="text-xl font-semibold mb-4">Contact</h2>
+      <p class="text-sm">Email: <a href="mailto:ashishk200088@egmail.com" class="hover:text-white">ashishk200088@gmail.com</a></p>
+      
+      <div class="flex space-x-4 mt-4">
+        <a href="https://github.com/yourusername" target="_blank" class="hover:text-white">GitHub</a>
+        <a href="https://linkedin.com/in/ashish-kumar-mishra-5a3685170" target="_blank" class="hover:text-white">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center text-sm text-gray-500 mt-10">
+    &copy; 2025 Ashish Kumar Mishra. All rights reserved.
+  </div>
+  
+</footer>
+
+</body>
+</html>
