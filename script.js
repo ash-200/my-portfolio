@@ -201,20 +201,26 @@ function viewp3(current)
 }
 
 
-function sendmsg()
-{
-  var sender="ashishk200088@gmail.com";
-  console.log(sender);
-Email.send({
-                Host: "smtp.gmail.com",
-                Username: "ashishm200088@gmail.com",
-                Password: "Manjula@1976",
-                To: "ashishk200088@gmail.com",
-                From: "ashishm200088@gmail.com",
-                Subject: "Test Email",
-                Body: "This is a test email sent using SMTP.js"
-            })
-            .then(function (message) {
-                alert("Mail sent successfully") // Alert message on successful email delivery
-            });
-}
+// contact.js
+
+// Initialize EmailJS
+(function() {
+  emailjs.init("avT3mYNNQENlCF0Mo"); // Replace with your actual public key from EmailJS
+})();
+
+// Form submit handler
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('contact-form');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // Stop form from submitting normally
+
+    emailjs.sendForm("service_rx8626e","template_r0c4b1k", this)
+      .then(function(response) {
+        alert('Message sent successfully!');
+        form.reset();
+      }, function(error) {
+        alert('Failed to send message: ' + JSON.stringify(error));
+      });
+  });
+});
